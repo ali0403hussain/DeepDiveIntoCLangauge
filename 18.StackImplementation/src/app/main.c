@@ -225,6 +225,14 @@ int main()
         //POP All items on the stack and pass 1 additional count to force an error
         //for empty stack
         popMultipleItems(ptrStack, (itemsCount+1));
+
+        //deinitialize stack
+        retValue = Stack_deInit(ptrStack);
+
+        if ( STACK_STATUS_GOOD !=  retValue )
+        {
+            printf("Error wile deinit: %u\n", retValue);
+        }
     }
     else
     {
