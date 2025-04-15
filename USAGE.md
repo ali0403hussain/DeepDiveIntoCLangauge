@@ -115,3 +115,25 @@ Choose C++ (GDB/LLDB)
   ]
 }
 ```
+
+🧪 CUnit Test Integration
+This project uses CUnit as a lightweight unit testing framework for C.
+### 1. Install CUnit (MSYS2)
+```bash
+pacman -S mingw-w64-i686-cunit
+```
+### 2. Configure Tests in VSCode
+- Open Command Palette → CMake: Edit User-Local CMake Kits
+- Ensure MSYS2 GCC kit is selected.
+- Add
+```json
+{
+  "cmake.testArgs": [],
+  "cmake.configureOnOpen": true,
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.testExplorer.enable": true,
+}
+```
+- Make sure CMake Tools extension is installed in VSCode.
+- After configuration, go to Testing panel in VSCode (flask icon) → you should see your tests listed as CUnitTests.
+

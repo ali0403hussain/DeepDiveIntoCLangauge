@@ -9,6 +9,8 @@ project(
     LANGUAGES C
 )
 
+enable_testing()
+
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
@@ -37,6 +39,8 @@ add_subdirectory(15.DynamicMemory)
 add_subdirectory(16.RandomNoGenerator)
 add_subdirectory(17.ImplementStdCFunction)
 add_subdirectory(18.StackImplementation)
+
+add_subdirectory(tests)
 
 
 
