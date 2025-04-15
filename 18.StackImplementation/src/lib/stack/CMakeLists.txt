@@ -1,0 +1,5 @@
+set(SRC_FILE stack.c)
+set(INC_PATH ".")
+add_library(${LIB_STACK} STATIC ${SRC_FILE})
+target_include_directories(${LIB_STACK} PUBLIC ${INC_PATH})
+target_compile_options(${LIB_STACK} PRIVATE -Werror -Wall -Wextra)

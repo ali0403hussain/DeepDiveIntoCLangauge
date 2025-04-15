@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "cstdint": "c",
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "bitwise.h": "c",
+        "bool.h": "c",
+        "random": "c",
+        "calculator.h": "c",
+        "system_error": "c",
+        "xlocale": "c",
+        "text_encoding": "c",
+        "typeinfo": "c",
+        "stdlib.h": "c",
+        "stdint-gcc.h": "c",
+        "errorstatus.h": "c",
+        "stack.h": "c"
+    }
+}

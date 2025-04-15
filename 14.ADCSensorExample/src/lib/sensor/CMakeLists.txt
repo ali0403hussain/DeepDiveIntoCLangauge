@@ -1,0 +1,6 @@
+set(SRC_FILE sensor.c)
+set(INC_PATH ".")
+add_library(${LIB_SENSOR} STATIC ${SRC_FILE})
+target_include_directories(${LIB_SENSOR} PUBLIC ${INC_PATH})
+target_link_libraries(${LIB_SENSOR} ${LIB_ADC})
+target_compile_options(${LIB_SENSOR} PRIVATE -Werror -Wall -Wextra)

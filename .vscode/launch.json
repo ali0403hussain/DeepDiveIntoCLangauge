@@ -1,0 +1,332 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug 01.HelloWorld",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/01.helloWorld/src/app/helloWorld.exe", 
+            "cwd": "${workspaceFolder}/01.helloWorld", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 02.Basics",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/02.Basics/src/app/Basics.exe", 
+            "cwd": "${workspaceFolder}/02.Basics", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 03.Recursion",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/03.Recursion/src/app/Recursion.exe", 
+            "cwd": "${workspaceFolder}/03.Recursion", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 04.IntegerPromotions",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/04.IntegerPromotions/src/app/IntegerPromotions.exe", 
+            "cwd": "${workspaceFolder}/04.IntegerPromotions", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 05.CreateBoolLib",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/05.CreateBoolLib/src/app/CreateBoolLib.exe", 
+            "cwd": "${workspaceFolder}/05.CreateBoolLib", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 06.BitwiseOperation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/06.BitwiseOperation/src/app/BitwiseOperation.exe", 
+            "cwd": "${workspaceFolder}/06.BitwiseOperation", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 07.BitwiseOperationEmbedded",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/07.BitwiseOperationEmbedded/src/app/BitwiseOperationEmbedded.exe", 
+            "cwd": "${workspaceFolder}/07.BitwiseOperationEmbedded", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 08.CalculatorUsingSwitch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/08.CalculatorUsingSwitch/src/app/Calculator.exe", 
+            "cwd": "${workspaceFolder}/08.CalculatorUsingSwitch", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 09.VariadicFunctions",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/09.VariadicFunctions/src/app/VariadicFunctions.exe", 
+            "cwd": "${workspaceFolder}/09.VariadicFunctions", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 10.CallbackFunctions",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/10.CallbackFunctions/src/app/CallbackFunctions.exe", 
+            "cwd": "${workspaceFolder}/10.CallbackFunctions", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 11.InLineFunctions",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/11.InLineFunctions/src/app/InLineFunctions.exe", 
+            "cwd": "${workspaceFolder}/11.InLineFunctions", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 12.Pointers",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/12.Pointers/src/app/Pointers.exe", 
+            "cwd": "${workspaceFolder}/12.Pointers", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 13.StructVsUnion",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/13.StructVsUnion/src/app/StructVsUnion.exe", 
+            "cwd": "${workspaceFolder}/13.StructVsUnion", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 14.ADCSensorExample",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/14.ADCSensorExample/src/app/ADCSensorExample.exe", 
+            "cwd": "${workspaceFolder}/14.ADCSensorExample", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 15.DynamicMemory",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/15.DynamicMemory/src/app/DynamicMemory.exe", 
+            "cwd": "${workspaceFolder}/15.DynamicMemory", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 16.RandomNoGenerator",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/16.RandomNoGenerator/src/app/RandomNoGenerator.exe", 
+            "cwd": "${workspaceFolder}/16.RandomNoGenerator", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 17.ImplementStdCFunction",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/17.ImplementStdCFunction/src/app/ImplementStdCFunction.exe", 
+            "cwd": "${workspaceFolder}/17.ImplementStdCFunction", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": "Debug 18.StackImplementation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/18.StackImplementation/src/app/StackImplementation.exe", 
+            "cwd": "${workspaceFolder}/18.StackImplementation", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+set(SRC_FILE calculator.c)
+set(INC_PATH "../../inc")
+add_library(${LIB_CALCULATOR} STATIC ${SRC_FILE})
+target_include_directories(${LIB_CALCULATOR} PUBLIC ${INC_PATH})
+target_compile_options(${LIB_CALCULATOR} PRIVATE -Werror -Wall -Wextra )
