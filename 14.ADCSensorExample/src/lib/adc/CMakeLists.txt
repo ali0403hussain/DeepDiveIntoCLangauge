@@ -1,5 +1,5 @@
 set(SRC_FILE adc.c)
-set(INC_PATH ".")
+set(INC_PATH "." "../../../inc")
 add_library(${LIB_ADC} STATIC ${SRC_FILE})
 target_include_directories(${LIB_ADC} PUBLIC ${INC_PATH})
 target_compile_options(${LIB_ADC} PRIVATE -Werror -Wall -Wextra)

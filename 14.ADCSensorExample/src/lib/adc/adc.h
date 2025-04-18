@@ -27,7 +27,7 @@
 /**********************************************************
  * Includes
  **********************************************************/
-#include <stdint.h>
+#include "types.h"
 
 /***********************************************************
  * Forward declerations and global variables
@@ -47,6 +47,11 @@ typedef enum {
 }AdcStatusCode;
 
 /**
+ * @brief Forward decleration for struct Adc
+ */
+typedef struct Adc Adc;
+
+/**
  * @brief Typedef struct for adc
  */
 typedef struct {
@@ -57,14 +62,6 @@ typedef struct {
     uint8_t resolutionBits;  //adc resolution in bits
     uint8_t __pad[2];
 }AdcParam;
-
-/**
- * @brief Typedef struct for adc 
- */
-typedef struct {
-    AdcParam adcParameters;
-    AdcInterface interface;
-}Adc;
 
 /**
  * @brief Interface function to convert Analog to digital
@@ -81,24 +78,20 @@ typedef AdcStatusCode (*Adc_ConvertAnalogToDigital)(Adc *object, const double ra
  * @brief Typedef struct for adc interface
  */
 typedef struct {
-    Adc_ConvertAnalogToDigital adcInterface;
+    Adc_ConvertAnalogToDigital converAnalogToDigital;
 }AdcInterface;
 
+/**
+ * @brief struct for adc 
+ */
+struct Adc{
+    AdcParam adcParameters;
+    AdcInterface interface;
+};
 
 /***********************************************************
  * Functions Declerations
  **********************************************************/
-
-/**
- * @brief local function to convert Analog to digital
- * 
- * @param object pointer to adc instance
- * @param rawInput rawInput Value
- * @param ptrDigitalValue pointer to converted digital value
- * 
- * @return AdcStatusCode
- */
-static AdcStatusCode loc_adcCovertAnalogToDigital(Adc *object, const double rawInput, uint32_t *ptrDigitalValue);
 
 /**
  * @brief function to init Analog to digital

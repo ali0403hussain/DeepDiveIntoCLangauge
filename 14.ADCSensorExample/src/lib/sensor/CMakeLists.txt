@@ -1,5 +1,5 @@
 set(SRC_FILE sensor.c)
-set(INC_PATH ".")
+set(INC_PATH "." "../../../inc")
 add_library(${LIB_SENSOR} STATIC ${SRC_FILE})
 target_include_directories(${LIB_SENSOR} PUBLIC ${INC_PATH})
 target_link_libraries(${LIB_SENSOR} ${LIB_ADC})

@@ -13,6 +13,7 @@
 /**********************************************************
  * Includes
  **********************************************************/
+#include <stdio.h>
 #include "adc.h" 
  
 /**********************************************************
@@ -30,7 +31,17 @@
 /***********************************************************
  * Function Prototype
  **********************************************************/
- 
+/**
+ * @brief local function to convert Analog to digital
+ * 
+ * @param object pointer to adc instance
+ * @param rawInput rawInput Value
+ * @param ptrDigitalValue pointer to converted digital value
+ * 
+ * @return AdcStatusCode
+ */
+static AdcStatusCode loc_adcCovertAnalogToDigital(Adc *object, const double rawInput, uint32_t *ptrDigitalValue); 
+
 /***********************************************************
  * Function Definations
  **********************************************************/
@@ -63,7 +74,10 @@ AdcStatusCode Adc_Init( Adc *object )
         object->adcParameters.resolution = POW2(object->adcParameters.resolutionBits);
         object->adcParameters.sensitivity = object->adcParameters.vref / (double)object->adcParameters.resolution;
 
-        object->interface = &loc_adcCovertAnalogToDigital;
+        object->interface.converAnalogToDigital = &loc_adcCovertAnalogToDigital;
+
+        //Calculate Adc sensitivity
+        object->adcParameters.sensitivity = object->adcParameters.vref / (double)object->adcParameters.resolution;
     }
 
     return retValue;

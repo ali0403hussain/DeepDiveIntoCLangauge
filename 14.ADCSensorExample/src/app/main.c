@@ -15,7 +15,7 @@
  **********************************************************/
 
 #include <stdio.h>  //<! Standard c library including printf scanf etc
-#include <stdint.h>
+#include "types.h"
 
 #include "adc.h"
 #include "sensor.h"
