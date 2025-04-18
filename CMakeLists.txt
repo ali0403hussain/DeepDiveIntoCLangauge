@@ -18,6 +18,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 set(LIB_BITWISE "bitwiseLibrary")
 set(LIB_CALCULATOR "CalculatorLibrary")
 set(LIB_ADC "ADCLibrary")
+set(LIB_TIME "TimeLibrary")
 set(LIB_SENSOR "SensorLibrary")
 set(LIB_STACK "StackLibrary")
 

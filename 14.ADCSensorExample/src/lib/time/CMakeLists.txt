@@ -1,0 +1,5 @@
+set(SRC_FILE time.c)
+set(INC_PATH "." "../../../inc")
+add_library(${LIB_TIME} STATIC ${SRC_FILE})
+target_include_directories(${LIB_TIME} PUBLIC ${INC_PATH})
+target_compile_options(${LIB_TIME} PRIVATE -Werror -Wall -Wextra)

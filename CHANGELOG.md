@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cunit Test framework
 - Sample Cunit test
 - Stack Tests
+- SoftwareTimer (Timer Lib) inside 14.ADCSensorExample
+- Test for Timer Lib
 
 ### Changed
 
