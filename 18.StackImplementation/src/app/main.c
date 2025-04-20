@@ -1,7 +1,7 @@
 /**
  * @file main.c
  * 
- * @description Provides examples for ADC Sensors
+ * @description Provides examples for Stack Library
  * 
  * @author - Ali Hussain
  * @date   - 11-04-2025

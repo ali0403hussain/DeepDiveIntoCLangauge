@@ -1,0 +1,5 @@
+set(SRC_FILE linearqueue.c)
+set(INC_PATH "." "../../../inc")
+add_library(${LIB_QUEUE_LINEAR} STATIC ${SRC_FILE})
+target_include_directories(${LIB_QUEUE_LINEAR} PUBLIC ${INC_PATH})
+target_compile_options(${LIB_QUEUE_LINEAR} PRIVATE -Werror -Wall -Wextra)

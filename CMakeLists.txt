@@ -21,6 +21,7 @@ set(LIB_ADC "ADCLibrary")
 set(LIB_TIME "TimeLibrary")
 set(LIB_SENSOR "SensorLibrary")
 set(LIB_STACK "StackLibrary")
+set(LIB_QUEUE_LINEAR "LinearQueueLibrary")
 
 add_subdirectory(01.HelloWorld)
 add_subdirectory(02.Basics)
@@ -40,6 +41,7 @@ add_subdirectory(15.DynamicMemory)
 add_subdirectory(16.RandomNoGenerator)
 add_subdirectory(17.ImplementStdCFunction)
 add_subdirectory(18.StackImplementation)
+add_subdirectory(19.QueueImplementation)
 
 add_subdirectory(tests)
 

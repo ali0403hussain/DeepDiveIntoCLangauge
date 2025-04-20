@@ -16,6 +16,7 @@
         "errorstatus.h": "c",
         "stack.h": "c",
         "adc.h": "c",
-        "ctime": "c"
+        "ctime": "c",
+        "linearqueue.h": "c"
     }
 }
