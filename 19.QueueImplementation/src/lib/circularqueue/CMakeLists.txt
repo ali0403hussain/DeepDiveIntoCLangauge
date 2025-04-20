@@ -1,0 +1,5 @@
+set(SRC_FILE circularqueue.c)
+set(INC_PATH "." "../../../inc")
+add_library(${LIB_QUEUE_CIRCULAR} STATIC ${SRC_FILE})
+target_include_directories(${LIB_QUEUE_CIRCULAR} PUBLIC ${INC_PATH})
+target_compile_options(${LIB_QUEUE_CIRCULAR} PRIVATE -Werror -Wall -Wextra)

@@ -36,8 +36,8 @@
 #define UINT64_MAX          ( 18446744073709551615U )
 #define UINT64_MIN          ( 0U )
 
-#define SIZE_MAX            ( 4294967295U )
-#define SIZE_MIN            ( 0U )
+#define SIZE_T_MAX            ( 4294967295U )
+#define SIZE_T_MIN            ( 0U )
 
 /**********************************************************
  * Includes

@@ -22,6 +22,7 @@ set(LIB_TIME "TimeLibrary")
 set(LIB_SENSOR "SensorLibrary")
 set(LIB_STACK "StackLibrary")
 set(LIB_QUEUE_LINEAR "LinearQueueLibrary")
+set(LIB_QUEUE_CIRCULAR "CircularQueueLibrary")
 
 add_subdirectory(01.HelloWorld)
 add_subdirectory(02.Basics)
