@@ -157,6 +157,10 @@ LinearQueueStatusCodes loc_LinearQueue_dequeue( LinearQueue *object, linearQueue
     {
         retValue = LINEAR_QUEUE_STATUS_ERROR_INSTANCE_INVALID;
     }
+    else if ( NULL == ptrElement )
+    {
+        retValue = LINEAR_QUEUE_STATUS_ERROR_ARGUMENT_INVALID;
+    }
     else
     {
         retValue = loc_LinearQueue_isEmpty( object );
@@ -184,6 +188,10 @@ LinearQueueStatusCodes loc_LinearQueue_peek( LinearQueue *object, linearQueue_ty
     if ( NULL == object )
     {
         retValue = LINEAR_QUEUE_STATUS_ERROR_INSTANCE_INVALID;
+    }
+    else if ( NULL == ptrElement )
+    {
+        retValue = LINEAR_QUEUE_STATUS_ERROR_ARGUMENT_INVALID;
     }
     else
     {
