@@ -345,6 +345,24 @@
             "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
             "stopAtEntry": false,
             "externalConsole": false
+        },
+        {
+            "name": "Debug 20.LinkListImplementation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/20.LinkListImplementation/src/app/LinkListImplementation.exe", 
+            "cwd": "${workspaceFolder}/20.LinkListImplementation", 
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "C:/msys64/mingw32/bin/gdb.exe",  
+            "stopAtEntry": false,
+            "externalConsole": false
         }
     ]
 }

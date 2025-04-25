@@ -17,6 +17,10 @@
         "stack.h": "c",
         "adc.h": "c",
         "ctime": "c",
-        "linearqueue.h": "c"
+        "linearqueue.h": "c",
+        "singlelinklist.h": "c",
+        "list": "c",
+        "ranges": "c",
+        "types.h": "c"
     }
 }
